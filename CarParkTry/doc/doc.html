@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>BridgePoint xtUML Generated Documentation</title><link rel="stylesheet" href="techpub.css" type="text/css" /><meta name="generator" content="DocBook XSL Stylesheets V1.75.1" /></head><body><div class="article" title="BridgePoint xtUML Generated Documentation"><div class="titlepage"><div><div><h2 class="title"><a id="idm305435631392"></a>
+  BridgePoint xtUML Generated Documentation
+</h2></div><div><div class="author"><h3 class="author"><span class="firstname"></span> <span class="surname"></span></h3></div></div></div><hr /></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#idm305435496240">1. CarParkTry</a></span></dt><dd><dl><dt><span class="section"><a href="#idm305435493104">1.1. System-Level Packages</a></span></dt><dd><dl><dt><span class="section"><a href="#idm305435492208">1.1.1. CP_System_Configs</a></span></dt><dt><span class="section"><a href="#idm305435487984">1.1.2. CP_System</a></span></dt><dd><dl><dt><span class="section"><a href="#idm305435483888">1.1.2.1. Barrier</a></span></dt><dd><dl><dt><span class="section"><a href="#idm305422861264">1.1.2.1.1. Interface Activities</a></span></dt><dt><span class="section"><a href="#idm305422856256">1.1.2.1.2. Barrier Packages</a></span></dt></dl></dd><dt><span class="section"><a href="#idm305422757968">1.1.2.2. CP_Controller</a></span></dt><dd><dl><dt><span class="section"><a href="#idm305422729408">1.1.2.2.1. Interface Activities</a></span></dt><dt><span class="section"><a href="#idm305422724544">1.1.2.2.2. CP_Controller Packages</a></span></dt></dl></dd><dt><span class="section"><a href="#idm305422359392">1.1.2.3. External Entities</a></span></dt><dd><dl><dt><span class="section"><a href="#idm305422312912">1.1.2.3.1. External Entity Activities</a></span></dt></dl></dd></dl></dd><dt><span class="section"><a href="#idm305422284928">1.1.3. CP_Interfaces</a></span></dt><dd><dl><dt><span class="section"><a href="#idm305422279328">1.1.3.1. Barrier_Control</a></span></dt></dl></dd></dl></dd></dl></dd></dl></div><div class="list-of-figures"><p><b>List of Figures</b></p><dl><dt>1. <a href="#CarParkTry-CP_System_Configs-PackageDiagram-figure">CP_System_Configs Package Diagram</a></dt><dt>2. <a href="#CarParkTry-CP_System-PackageDiagram-figure">CP_System Package Diagram</a></dt><dt>3. <a href="#CarParkTry-CP_System-Barrier-ComponentDiagram-figure">Barrier Component Diagram</a></dt><dt>4. <a href="#CarParkTry-CP_System-Barrier-Barriers-PackageDiagram-figure">Barriers Package Diagram</a></dt><dt>5. <a href="#CarParkTry-CP_System-Barrier-Barriers-CPBarrier-InstanceStateMachine-figure">Barriers CPBarrier Instance State Machine</a></dt><dt>6. <a href="#CarParkTry-CP_System-Barrier-Barrier_Funcs-PackageDiagram-figure">Barrier_Funcs Package Diagram</a></dt><dt>7. <a href="#CarParkTry-CP_System-CP_Controller-ComponentDiagram-figure">CP_Controller Component Diagram</a></dt><dt>8. <a href="#CarParkTry-CP_System-CP_Controller-CP_Control_Elements-PackageDiagram-figure">CP_Control_Elements Package Diagram</a></dt><dt>9. <a href="#CarParkTry-CP_System-CP_Controller-CP_Control_Elements-CP_Entry-InstanceStateMachine-figure">CP_Control_Elements CP_Entry Instance State Machine</a></dt><dt>10. <a href="#CarParkTry-CP_System-CP_Controller-CP_Control_Elements-Ticket-InstanceStateMachine-figure">CP_Control_Elements Ticket Instance State Machine</a></dt><dt>11. <a href="#CarParkTry-CP_System-CP_Controller-CP_Controller_Tests-PackageDiagram-figure">CP_Controller_Tests Package Diagram</a></dt><dt>12. <a href="#CarParkTry-CP_System-CP_Controller-CP_Controller_Funcs-PackageDiagram-figure">CP_Controller_Funcs Package Diagram</a></dt><dt>13. <a href="#CarParkTry-CP_Interfaces-PackageDiagram-figure">CP_Interfaces Package Diagram</a></dt></dl></div><div class="list-of-tables"><p><b>List of Tables</b></p><dl><dt>1. <a href="#idm305435478832">Barrier Ports</a></dt><dt>2. <a href="#idm305422848832">Datatypes</a></dt><dt>3. <a href="#idm305422839072">Classes</a></dt><dt>4. <a href="#idm305422787616">Barrier_Funcs</a></dt><dt>5. <a href="#idm305422751648">CP_Controller Ports</a></dt><dt>6. <a href="#idm305422715152">Datatypes</a></dt><dt>7. <a href="#idm305422703632">Classes</a></dt><dt>8. <a href="#idm305422538752">CP_Control_Elements</a></dt><dt>9. <a href="#idm305422515216">CP_Controller_Tests</a></dt><dt>10. <a href="#idm305422428976">CP_Controller_Funcs</a></dt><dt>11. <a href="#idm305422357344">CP_System</a></dt><dt>12. <a href="#idm305422276192">Barrier_Control Messages</a></dt></dl></div><div class="section" title="1. CarParkTry"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm305435496240"></a>1. CarParkTry</h2></div><div><h3 class="subtitle">Generated Documentation</h3></div></div></div><pre class="literallayout">Please find below generated documentation for the system named CarParkTry.</pre><pre class="literallayout"></pre><div class="section" title="1.1. System-Level Packages"><div class="titlepage"><div><div><h3 class="title"><a id="idm305435493104"></a>1.1. System-Level Packages</h3></div><div><h4 class="subtitle"></h4></div></div></div><div class="section" title="1.1.1. CP_System_Configs"><div class="titlepage"><div><div><h4 class="title"><a id="idm305435492208"></a>1.1.1. CP_System_Configs</h4></div><div><h5 class="subtitle">Package</h5></div></div></div><pre class="literallayout"><div class="figure"><a id="CarParkTry-CP_System_Configs-PackageDiagram-figure"></a><p class="title"><b>Figure 1. CP_System_Configs Package Diagram</b></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/CarParkTry-CP_System_Configs-Package Diagram.png" width="100%" alt="CP_System_Configs Package Diagram" /></td></tr></table></div></div></div><br class="figure-break" />
+</pre></div><div class="section" title="1.1.2. CP_System"><div class="titlepage"><div><div><h4 class="title"><a id="idm305435487984"></a>1.1.2. CP_System</h4></div><div><h5 class="subtitle">Package</h5></div></div></div><pre class="literallayout"><div class="figure"><a id="CarParkTry-CP_System-PackageDiagram-figure"></a><p class="title"><b>Figure 2. CP_System Package Diagram</b></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/CarParkTry-CP_System-Package Diagram.png" width="100%" alt="CP_System Package Diagram" /></td></tr></table></div></div></div><br class="figure-break" />
+</pre><div class="section" title="1.1.2.1. Barrier"><div class="titlepage"><div><div><h5 class="title"><a id="idm305435483888"></a>1.1.2.1. Barrier</h5></div><div><h6 class="subtitle">Component</h6></div></div></div><pre class="literallayout"><div class="figure"><a id="CarParkTry-CP_System-Barrier-ComponentDiagram-figure"></a><p class="title"><b>Figure 3. Barrier Component Diagram</b></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/CarParkTry-CP_System-Barrier-Component Diagram.png" width="100%" alt="Barrier Component Diagram" /></td></tr></table></div></div></div><br class="figure-break" />
+</pre><pre class="literallayout"><div class="table"><a id="idm305435478832"></a><p class="title"><b>Table 1. Barrier Ports</b></p><div class="table-contents"><table summary="Barrier Ports" border="1"><colgroup><col /><col /><col /><col /><col /></colgroup><thead><tr><th align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Port.gif" width="100%" /></td></tr></table></div>
+</pre>
+</th><th align="left">
+<pre class="literallayout">Name</pre>
+</th><th align="left">
+<pre class="literallayout">Interface</pre>
+</th><th align="left">
+<pre class="literallayout">Type</pre>
+</th><th align="left">
+<pre class="literallayout">Multiplicity</pre>
+</th></tr></thead><tbody><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Provision.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">BAR_Message</pre>
+</td><td align="left">
+<pre class="literallayout">Barrier_Control</pre>
+</td><td align="left">
+<pre class="literallayout">provision</pre>
+</td><td align="left">
+<pre class="literallayout">0</pre>
+</td></tr></tbody></table></div></div><br class="table-break" />
+</pre><div class="section" title="1.1.2.1.1. Interface Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422861264"></a>1.1.2.1.1. Interface Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.1.1.1. Port: BAR_Message, Interface: Barrier_Control"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422860368"></a>1.1.2.1.1.1. Port: BAR_Message, Interface: Barrier_Control</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.1.1.1.1. ToBarrier"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422859472"></a>1.1.2.1.1.1.1. ToBarrier</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">bar = BAR::useInstance();
+
+if param.barNumber ==  bar.BAR_Number
+
+	if param.barUP == true
+		LOG::LogInfo( message: "Send event to OPEN Barrier." );
+		generate BAR1:OPEN to bar;
+	else
+		LOG::LogInfo( message: "Send event to CLOSE Barrier." );
+		generate BAR2:CLOSE to bar;
+	end if;
+else
+	LOG::LogInfo( message: "Trying to access the wrong barrier." );
+end if;
+</pre></div></div></div><div class="section" title="1.1.2.1.2. Barrier Packages"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422856256"></a>1.1.2.1.2. Barrier Packages</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout">Rendered here are the contained package diagrams.</pre><div class="section" title="1.1.2.1.2.1. Barriers"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422854464"></a>1.1.2.1.2.1. Barriers</h6></div><div><h6 class="subtitle">Package</h6></div></div></div><pre class="literallayout"><div class="figure"><a id="CarParkTry-CP_System-Barrier-Barriers-PackageDiagram-figure"></a><p class="title"><b>Figure 4. Barriers Package Diagram</b></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/CarParkTry-CP_System-Barrier-Barriers-Package Diagram.png" width="100%" alt="Barriers Package Diagram" /></td></tr></table></div></div></div><br class="figure-break" />
+</pre><div class="section" title="1.1.2.1.2.1.1. Datatypes"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422850368"></a>1.1.2.1.2.1.1. Datatypes</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"><div class="table"><a id="idm305422848832"></a><p class="title"><b>Table 2. Datatypes</b></p><div class="table-contents"><table summary="Datatypes" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/DataType.gif" width="100%" /></td></tr></table></div>
+</pre>
+</th><th align="left">
+<pre class="literallayout">Name</pre>
+</th><th align="left">
+<pre class="literallayout">Description</pre>
+</th></tr></thead><tbody></tbody></table></div></div><br class="table-break" />
+</pre></div><div class="section" title="1.1.2.1.2.1.2. Classes"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422840608"></a>1.1.2.1.2.1.2. Classes</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"><div class="table"><a id="idm305422839072"></a><p class="title"><b>Table 3. Classes</b></p><div class="table-contents"><table summary="Classes" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Class.gif" width="100%" /></td></tr></table></div>
+</pre>
+</th><th align="left">
+<pre class="literallayout">Name</pre>
+</th><th align="left">
+<pre class="literallayout">Description</pre>
+</th></tr></thead><tbody><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Class.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">CPBarrier</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Attribute.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">current_state:state&lt;State_Model&gt;</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Attribute.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">BAR_Number:integer</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr></tbody></table></div></div><br class="table-break" />
+</pre><pre class="literallayout"><div class="figure"><a id="CarParkTry-CP_System-Barrier-Barriers-CPBarrier-InstanceStateMachine-figure"></a><p class="title"><b>Figure 5. Barriers CPBarrier Instance State Machine</b></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/CarParkTry-CP_System-Barrier-Barriers-CPBarrier-Instance State Machine.png" width="100%" alt="Barriers CPBarrier Instance State Machine" /></td></tr></table></div></div></div><br class="figure-break" />
+</pre><div class="section" title="1.1.2.1.2.1.2.1. Class Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422810240"></a>1.1.2.1.2.1.2.1. Class Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout">Here are listings of all of the activies in the class and its state machine(s).</pre><div class="section" title="1.1.2.1.2.1.2.1.1. Instance State Machine Actions"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422808160"></a>1.1.2.1.2.1.2.1.1. Instance State Machine Actions</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.1.2.1.2.1.1.1. CPBarrier State[1]:Open Position"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422807264"></a>1.1.2.1.2.1.2.1.1.1. CPBarrier State[1]:Open Position</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="literallayout"></pre><pre class="programlisting">LOG::LogInfo( message: "Barrier is now OPEN.");
+</pre></div><div class="section" title="1.1.2.1.2.1.2.1.1.2. CPBarrier State[2]:Closed Position"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422803392"></a>1.1.2.1.2.1.2.1.1.2. CPBarrier State[2]:Closed Position</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="literallayout"></pre><pre class="programlisting">LOG::LogInfo( message: "Barrier is now CLOSED.");
+</pre></div></div><div class="section" title="1.1.2.1.2.1.2.1.2. Class Operations"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422799280"></a>1.1.2.1.2.1.2.1.2. Class Operations</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.1.2.1.2.1.2.1. Barriers:CPBarrier: useInstance"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422798384"></a>1.1.2.1.2.1.2.1.2.1. Barriers:CPBarrier:  useInstance</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">select any barrier from instances of BAR;
+
+if empty barrier
+	create object instance barrier of BAR;
+end if;
+return barrier;
+</pre></div></div></div></div></div><div class="section" title="1.1.2.1.2.2. Barrier_Funcs"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422794928"></a>1.1.2.1.2.2. Barrier_Funcs</h6></div><div><h6 class="subtitle">Package</h6></div></div></div><pre class="literallayout"><div class="figure"><a id="CarParkTry-CP_System-Barrier-Barrier_Funcs-PackageDiagram-figure"></a><p class="title"><b>Figure 6. Barrier_Funcs Package Diagram</b></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/CarParkTry-CP_System-Barrier-Barrier_Funcs-Package Diagram.png" width="100%" alt="Barrier_Funcs Package Diagram" /></td></tr></table></div></div></div><br class="figure-break" />
+</pre><div class="section" title="1.1.2.1.2.2.1. Functions"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422789568"></a>1.1.2.1.2.2.1. Functions</h6></div><div><h6 class="subtitle">Functions</h6></div></div></div><pre class="literallayout"><div class="table"><a id="idm305422787616"></a><p class="title"><b>Table 4. Barrier_Funcs</b></p><div class="table-contents"><table summary="Barrier_Funcs" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</th><th align="left">
+<pre class="literallayout">Name</pre>
+</th><th align="left">
+<pre class="literallayout">Description</pre>
+</th></tr></thead><tbody><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">initBarrier()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">openBarrier()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr></tbody></table></div></div><br class="table-break" />
+</pre><div class="section" title="1.1.2.1.2.2.1.1. Function Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422765504"></a>1.1.2.1.2.2.1.1. Function Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.1.2.2.1.1.1. initBarrier"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422764608"></a>1.1.2.1.2.2.1.1.1. initBarrier</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">bar = BAR::useInstance();
+
+bar.BAR_Number = 1;
+
+LOG::LogInfo( message: "Created instance of Barrier in Barrier component!" );
+</pre></div><div class="section" title="1.1.2.1.2.2.1.1.2. openBarrier"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422761632"></a>1.1.2.1.2.2.1.1.2. openBarrier</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">LOG::LogInfo( message: "Opening barrier for vehicle to entyer cat park.");
+
+bar = BAR::useInstance();
+
+generate BAR1:OPEN to bar;
+</pre></div></div></div></div></div></div><div class="section" title="1.1.2.2. CP_Controller"><div class="titlepage"><div><div><h5 class="title"><a id="idm305422757968"></a>1.1.2.2. CP_Controller</h5></div><div><h6 class="subtitle">Component</h6></div></div></div><pre class="literallayout"><div class="figure"><a id="CarParkTry-CP_System-CP_Controller-ComponentDiagram-figure"></a><p class="title"><b>Figure 7. CP_Controller Component Diagram</b></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/CarParkTry-CP_System-CP_Controller-Component Diagram.png" width="100%" alt="CP_Controller Component Diagram" /></td></tr></table></div></div></div><br class="figure-break" />
+</pre><pre class="literallayout"><div class="table"><a id="idm305422751648"></a><p class="title"><b>Table 5. CP_Controller Ports</b></p><div class="table-contents"><table summary="CP_Controller Ports" border="1"><colgroup><col /><col /><col /><col /><col /></colgroup><thead><tr><th align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Port.gif" width="100%" /></td></tr></table></div>
+</pre>
+</th><th align="left">
+<pre class="literallayout">Name</pre>
+</th><th align="left">
+<pre class="literallayout">Interface</pre>
+</th><th align="left">
+<pre class="literallayout">Type</pre>
+</th><th align="left">
+<pre class="literallayout">Multiplicity</pre>
+</th></tr></thead><tbody><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Requirement.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">BAR_Message</pre>
+</td><td align="left">
+<pre class="literallayout">Barrier_Control</pre>
+</td><td align="left">
+<pre class="literallayout">requirement</pre>
+</td><td align="left">
+<pre class="literallayout">0</pre>
+</td></tr></tbody></table></div></div><br class="table-break" />
+</pre><div class="section" title="1.1.2.2.1. Interface Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422729408"></a>1.1.2.2.1. Interface Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.2.1.1. Port: BAR_Message, Interface: Barrier_Control"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422728512"></a>1.1.2.2.1.1. Port: BAR_Message, Interface: Barrier_Control</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.2.1.1.1. ToBarrier"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422727616"></a>1.1.2.2.1.1.1. ToBarrier</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">
+</pre></div></div></div><div class="section" title="1.1.2.2.2. CP_Controller Packages"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422724544"></a>1.1.2.2.2. CP_Controller Packages</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout">Rendered here are the contained package diagrams.</pre><div class="section" title="1.1.2.2.2.1. CP_Control_Elements"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422722464"></a>1.1.2.2.2.1. CP_Control_Elements</h6></div><div><h6 class="subtitle">Package</h6></div></div></div><pre class="literallayout"><div class="figure"><a id="CarParkTry-CP_System-CP_Controller-CP_Control_Elements-PackageDiagram-figure"></a><p class="title"><b>Figure 8. CP_Control_Elements Package Diagram</b></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/CarParkTry-CP_System-CP_Controller-CP_Control_Elements-Package Diagram.png" width="100%" alt="CP_Control_Elements Package Diagram" /></td></tr></table></div></div></div><br class="figure-break" />
+</pre><div class="section" title="1.1.2.2.2.1.1. Datatypes"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422716976"></a>1.1.2.2.2.1.1. Datatypes</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"><div class="table"><a id="idm305422715152"></a><p class="title"><b>Table 6. Datatypes</b></p><div class="table-contents"><table summary="Datatypes" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/DataType.gif" width="100%" /></td></tr></table></div>
+</pre>
+</th><th align="left">
+<pre class="literallayout">Name</pre>
+</th><th align="left">
+<pre class="literallayout">Description</pre>
+</th></tr></thead><tbody></tbody></table></div></div><br class="table-break" />
+</pre></div><div class="section" title="1.1.2.2.2.1.2. Classes"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422705456"></a>1.1.2.2.2.1.2. Classes</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"><div class="table"><a id="idm305422703632"></a><p class="title"><b>Table 7. Classes</b></p><div class="table-contents"><table summary="Classes" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Class.gif" width="100%" /></td></tr></table></div>
+</pre>
+</th><th align="left">
+<pre class="literallayout">Name</pre>
+</th><th align="left">
+<pre class="literallayout">Description</pre>
+</th></tr></thead><tbody><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Class.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">CP_Entry</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Attribute.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">current_state:state&lt;State_Model&gt;</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Attribute.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">ENT_Number:integer</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Class.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">Operational_Metrics</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Attribute.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">Latest_Ticket_Number:integer</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Attribute.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">Version:real</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Attribute.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">Occupancy:integer</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Attribute.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">Capacity:integer</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Class.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">Ticket</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Attribute.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">When_Collected:timestamp</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Attribute.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">When_Paid:timestamp</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Attribute.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">When_Created:timestamp</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Attribute.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">current_state:state&lt;State_Model&gt;</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Attribute.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">TKT_Number:integer</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr></tbody></table></div></div><br class="table-break" />
+</pre><pre class="literallayout"><div class="figure"><a id="CarParkTry-CP_System-CP_Controller-CP_Control_Elements-CP_Entry-InstanceStateMachine-figure"></a><p class="title"><b>Figure 9. CP_Control_Elements CP_Entry Instance State Machine</b></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/CarParkTry-CP_System-CP_Controller-CP_Control_Elements-CP_Entry-Instance State Machine.png" width="100%" alt="CP_Control_Elements CP_Entry Instance State Machine" /></td></tr></table></div></div></div><br class="figure-break" />
+</pre><pre class="literallayout"><div class="figure"><a id="CarParkTry-CP_System-CP_Controller-CP_Control_Elements-Ticket-InstanceStateMachine-figure"></a><p class="title"><b>Figure 10. CP_Control_Elements Ticket Instance State Machine</b></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/CarParkTry-CP_System-CP_Controller-CP_Control_Elements-Ticket-Instance State Machine.png" width="100%" alt="CP_Control_Elements Ticket Instance State Machine" /></td></tr></table></div></div></div><br class="figure-break" />
+</pre><div class="section" title="1.1.2.2.2.1.2.1. Class Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422597312"></a>1.1.2.2.2.1.2.1. Class Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout">Here are listings of all of the activies in the class and its state machine(s).</pre><div class="section" title="1.1.2.2.2.1.2.1.1. Instance State Machine Actions"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422595152"></a>1.1.2.2.2.1.2.1.1. Instance State Machine Actions</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.2.2.1.2.1.1.1. CP_Entry State[1]:Awaiting Vehicle"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422594256"></a>1.1.2.2.2.1.2.1.1.1. CP_Entry State[1]:Awaiting Vehicle</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="literallayout"></pre><pre class="programlisting">LOG::LogInfo( message: "Waiting for a vehicle to arrive.");
+
+// ::closeBarrier;
+//send BAR_Message::ToBarrier(barNumber : self.ENT_Number, barPosition: BarPosition::CLOSE);
+BAR_Message::ToBarrier(barNumber : self.ENT_Number, barUP: false);
+
+LOG::LogInfo( message: "Close event sent to barrier from Entry.");
+</pre></div><div class="section" title="1.1.2.2.2.1.2.1.1.2. CP_Entry State[2]:Checking Carpark Not Full"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422589632"></a>1.1.2.2.2.1.2.1.1.2. CP_Entry State[2]:Checking Carpark Not Full</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="literallayout"></pre><pre class="programlisting">LOG::LogInfo( message: "Checking that there is one or more spaces available in car park.");
+
+if ::availableSpace()
+	::createTicket(fromEntry : self.ENT_Number);
+	LOG::LogInfo( message: "Ticket has been requested.");
+	generate ENT5:Ticket_Requested to self;
+	
+else
+	LOG::LogInfo( message: "Need to wait for space.");
+	generate ENT3:Wait_For_Space to self;
+	
+end if;
+
+</pre></div><div class="section" title="1.1.2.2.2.1.2.1.1.3. CP_Entry State[3]:Waitung For Space"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422585152"></a>1.1.2.2.2.1.2.1.1.3. CP_Entry State[3]:Waitung For Space</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="literallayout"></pre><pre class="programlisting">LOG::LogInfo( message: "Waiting 10 seconds before checkng space again.");
+
+create event instance wait of ENT4:Check_For_Space_Again to self;
+timeout = TIM::timer_start( event_inst: wait, microseconds: 10000000);
+</pre></div><div class="section" title="1.1.2.2.2.1.2.1.1.4. CP_Entry State[4]:Awaiting Ticket Issue"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422580608"></a>1.1.2.2.2.1.2.1.1.4. CP_Entry State[4]:Awaiting Ticket Issue</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="literallayout"></pre><pre class="programlisting">LOG::LogInfo( message: "Waiting for Ticket to be dispensed.");
+</pre></div><div class="section" title="1.1.2.2.2.1.2.1.1.5. CP_Entry State[5]:Awaiting Vehicle Entry"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422576560"></a>1.1.2.2.2.1.2.1.1.5. CP_Entry State[5]:Awaiting Vehicle Entry</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="literallayout"></pre><pre class="programlisting">LOG::LogInfo( message: "Ticket needs to be taken from dispenser before a vehicle can enter the car park.");
+LOG::LogInfo( message: "Once accepted, the barrier will open to allow entry.");
+
+//::openBarrier();
+//send BAR_Message::ToBarrier(barNumber : self.ENT_Number, barPosition: BarPosition::CLOSE);
+BAR_Message::ToBarrier(barNumber : self.ENT_Number, barUP: false);
+
+LOG::LogInfo( message: "Give vehicle 10 seconds before placing in a delayed state.");
+
+create event instance delay of ENT9:Entry_Timeout to self;
+timeout = TIM::timer_start( event_inst: delay, microseconds: 10000000);
+</pre></div><div class="section" title="1.1.2.2.2.1.2.1.1.6. CP_Entry State[6]:Awaiting Ticket Acceptance"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422571744"></a>1.1.2.2.2.1.2.1.1.6. CP_Entry State[6]:Awaiting Ticket Acceptance</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="literallayout"></pre><pre class="programlisting">LOG::LogInfo( message: "When ticket is issued the occupancy need to be updated." );
+
+::increaseOccupancy();
+</pre></div><div class="section" title="1.1.2.2.2.1.2.1.1.7. CP_Entry State[7]:Delayed Entry"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422567648"></a>1.1.2.2.2.1.2.1.1.7. CP_Entry State[7]:Delayed Entry</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="literallayout"></pre><pre class="programlisting">LOG::LogInfo( message: "Entry of vehicle has been dlayed for some unknown reason.");
+</pre></div></div><div class="section" title="1.1.2.2.2.1.2.1.2. Class Operations"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422563424"></a>1.1.2.2.2.1.2.1.2. Class Operations</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.2.2.1.2.1.2.1. CP_Control_Elements:CP_Entry: useInstance"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422562528"></a>1.1.2.2.2.1.2.1.2.1. CP_Control_Elements:CP_Entry:  useInstance</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">select any entry from instances of ENT;
+
+if empty entry
+	create object instance entry of ENT;
+end if;
+return entry;
+</pre></div></div></div><div class="section" title="1.1.2.2.2.1.2.2. Class Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422559328"></a>1.1.2.2.2.1.2.2. Class Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout">Here are listings of all of the activies in the class and its state machine(s).</pre><div class="section" title="1.1.2.2.2.1.2.2.1. Class Operations"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422557168"></a>1.1.2.2.2.1.2.2.1. Class Operations</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.2.2.1.2.2.1.1. CP_Control_Elements:Operational_Metrics: useInstance"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422556272"></a>1.1.2.2.2.1.2.2.1.1. CP_Control_Elements:Operational_Metrics:  useInstance</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">select any opmets from instances of OPMET;
+if empty opmets
+	create object instance opmets of OPMET;
+end if;
+return opmets;
+</pre></div></div></div><div class="section" title="1.1.2.2.2.1.2.3. Class Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422553008"></a>1.1.2.2.2.1.2.3. Class Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout">Here are listings of all of the activies in the class and its state machine(s).</pre><div class="section" title="1.1.2.2.2.1.2.3.1. Instance State Machine Actions"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422550848"></a>1.1.2.2.2.1.2.3.1. Instance State Machine Actions</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.2.2.1.2.3.1.1. Ticket State[1]:Ticket Created"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422549952"></a>1.1.2.2.2.1.2.3.1.1. Ticket State[1]:Ticket Created</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="literallayout"></pre><pre class="programlisting">// This instance state should now exist because a new (associated) instance of a ticket has been created.
+
+LOG::LogInfo( message: "New Ticket Instance now exists.");
+</pre></div><div class="section" title="1.1.2.2.2.1.2.3.1.2. Ticket State[2]:Associating Entry"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422545808"></a>1.1.2.2.2.1.2.3.1.2. Ticket State[2]:Associating Entry</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="literallayout"></pre><pre class="programlisting">// Relate the newly created ticket to the entry it is to be issued from, and set the time of its creation.
+
+ent = ENT::useInstance();
+
+if (ent.ENT_Number == rcvd_evt.fromEntry)
+	
+	select any ticket from instances of TKT where selected.TKT_Number == rcvd_evt.tktNumber;
+
+	relate ticket to ent across R1;
+	
+	//current_time = TIM::current_clock();
+	
+	ticket.When_Created = TIM::current_clock();
+	
+	LOG::LogTime( message: " is time of creation for ticket number: ", t: ticket.When_Created);
+	LOG::LogInfo( message: "Associating ticket number: ");
+	LOG::LogInteger( message: ticket.TKT_Number);
+	
+	generate ENT6:Ticket_Issued to ent;
+
+else
+	
+	LOG::LogInfo( message: "There''s been a mix up with entries and tickets!");
+	
+end if;
+</pre></div></div></div></div><div class="section" title="1.1.2.2.2.1.3. Associations"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422540704"></a>1.1.2.2.2.1.3. Associations</h6></div><div><h6 class="subtitle">Associations</h6></div></div></div><pre class="literallayout"><div class="table"><a id="idm305422538752"></a><p class="title"><b>Table 8. CP_Control_Elements</b></p><div class="table-contents"><table summary="CP_Control_Elements" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Association.gif" width="100%" /></td></tr></table></div>
+</pre>
+</th><th align="left">
+<pre class="literallayout">Name</pre>
+</th><th align="left">
+<pre class="literallayout">Description</pre>
+</th></tr></thead><tbody><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Association.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">1</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr></tbody></table></div></div><br class="table-break" />
+</pre></div></div><div class="section" title="1.1.2.2.2.2. CP_Controller_Tests"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422522656"></a>1.1.2.2.2.2. CP_Controller_Tests</h6></div><div><h6 class="subtitle">Package</h6></div></div></div><pre class="literallayout"><div class="figure"><a id="CarParkTry-CP_System-CP_Controller-CP_Controller_Tests-PackageDiagram-figure"></a><p class="title"><b>Figure 11. CP_Controller_Tests Package Diagram</b></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/CarParkTry-CP_System-CP_Controller-CP_Controller_Tests-Package Diagram.png" width="100%" alt="CP_Controller_Tests Package Diagram" /></td></tr></table></div></div></div><br class="figure-break" />
+</pre><div class="section" title="1.1.2.2.2.2.1. Functions"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422517168"></a>1.1.2.2.2.2.1. Functions</h6></div><div><h6 class="subtitle">Functions</h6></div></div></div><pre class="literallayout"><div class="table"><a id="idm305422515216"></a><p class="title"><b>Table 9. CP_Controller_Tests</b></p><div class="table-contents"><table summary="CP_Controller_Tests" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</th><th align="left">
+<pre class="literallayout">Name</pre>
+</th><th align="left">
+<pre class="literallayout">Description</pre>
+</th></tr></thead><tbody><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">awaitVehicle()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">initEntry()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">initOperMetrics()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">Welcome()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">acceptTicket()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">vehicleEntering()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">issueTicket()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr></tbody></table></div></div><br class="table-break" />
+</pre><div class="section" title="1.1.2.2.2.2.1.1. Function Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422461312"></a>1.1.2.2.2.2.1.1. Function Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.2.2.2.1.1.1. awaitVehicle"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422460384"></a>1.1.2.2.2.2.1.1.1. awaitVehicle</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">ent = ENT::useInstance();
+
+generate ENT2:Await_Vehicle to ent;
+
+LOG::LogInfo( message: "Making sure Entry executes action for first state.");
+
+
+</pre></div><div class="section" title="1.1.2.2.2.2.1.1.2. initEntry"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422457296"></a>1.1.2.2.2.2.1.1.2. initEntry</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">ent = ENT::useInstance();
+
+ent.ENT_Number = 1 ;
+
+LOG::LogInfo( message: "Created instance of CP_Entry and given it a Number of :");
+LOG::LogInteger( message: ent.ENT_Number);
+</pre></div><div class="section" title="1.1.2.2.2.2.1.1.3. initOperMetrics"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422454000"></a>1.1.2.2.2.2.1.1.3. initOperMetrics</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">// Initialise the car park operational metrics.
+
+opmets = OPMET::useInstance();
+
+opmets.Capacity = 20;
+opmets.Occupancy = 0;
+opmets.Latest_Ticket_Number = 0;
+opmets.Version = 1.0;
+
+LOG::LogInfo( message: "Car park capacity is: " );
+LOG::LogInteger( message: opmets.Capacity);
+
+LOG::LogInfo( message: "CurrentcCar park occupancy is: " );
+LOG::LogInteger( message: opmets.Occupancy);
+
+LOG::LogInfo( message: "Latest Ticket Number is: " );
+LOG::LogInteger( message: opmets.Latest_Ticket_Number);
+
+LOG::LogReal( message: " is Current Version of Metrics.", r: opmets.Version );
+
+</pre></div><div class="section" title="1.1.2.2.2.2.1.1.4. Welcome"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422450224"></a>1.1.2.2.2.2.1.1.4. Welcome</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">LOG::LogInfo( message: "Welcome to the Automatically Controlled Carpark." );
+LOG::LogInfo( message: "________________________________________________");
+
+::initOperMetrics();
+::initEntry();
+
+
+::vehicleArrival();
+::acceptTicket();
+::vehicleEntering();
+
+
+::vehicleArrival();
+::acceptTicket();
+::vehicleEntering();
+
+
+::vehicleArrival();
+::acceptTicket();
+::vehicleEntering();
+
+control stop;
+
+</pre></div><div class="section" title="1.1.2.2.2.2.1.1.5. acceptTicket"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422446448"></a>1.1.2.2.2.2.1.1.5. acceptTicket</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">ent = ENT::useInstance();
+
+generate ENT7:Ticket_Accepted to ent;
+
+LOG::LogInfo( message: "Ticket has been accepted by driver.");
+</pre></div><div class="section" title="1.1.2.2.2.2.1.1.6. vehicleEntering"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422443360"></a>1.1.2.2.2.2.1.1.6. vehicleEntering</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">ent = ENT::useInstance();
+
+generate ENT8:Vehicle_Entered to ent;
+
+LOG::LogInfo( message: "Vehicle has entered car park.");
+</pre></div><div class="section" title="1.1.2.2.2.2.1.1.7. issueTicket"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422440272"></a>1.1.2.2.2.2.1.1.7. issueTicket</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">ent = ENT::useInstance();
+
+generate ENT6:Ticket_Issued to ent;
+
+LOG::LogInfo( message: "Ticket has been accepted by driver.");
+</pre></div></div></div></div><div class="section" title="1.1.2.2.2.3. CP_Controller_Funcs"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422436800"></a>1.1.2.2.2.3. CP_Controller_Funcs</h6></div><div><h6 class="subtitle">Package</h6></div></div></div><pre class="literallayout"><div class="figure"><a id="CarParkTry-CP_System-CP_Controller-CP_Controller_Funcs-PackageDiagram-figure"></a><p class="title"><b>Figure 12. CP_Controller_Funcs Package Diagram</b></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/CarParkTry-CP_System-CP_Controller-CP_Controller_Funcs-Package Diagram.png" width="100%" alt="CP_Controller_Funcs Package Diagram" /></td></tr></table></div></div></div><br class="figure-break" />
+</pre><div class="section" title="1.1.2.2.2.3.1. Functions"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422430992"></a>1.1.2.2.2.3.1. Functions</h6></div><div><h6 class="subtitle">Functions</h6></div></div></div><pre class="literallayout"><div class="table"><a id="idm305422428976"></a><p class="title"><b>Table 10. CP_Controller_Funcs</b></p><div class="table-contents"><table summary="CP_Controller_Funcs" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</th><th align="left">
+<pre class="literallayout">Name</pre>
+</th><th align="left">
+<pre class="literallayout">Description</pre>
+</th></tr></thead><tbody><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">vehicleArrival()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">availableSpace()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">createTicket(fromEntry)</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">checkForSpaceAgain()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">waitForSpace()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Function.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">increaseOccupancy()</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr></tbody></table></div></div><br class="table-break" />
+</pre><div class="section" title="1.1.2.2.2.3.1.1. Function Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422380176"></a>1.1.2.2.2.3.1.1. Function Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.2.2.3.1.1.1. vehicleArrival"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422379248"></a>1.1.2.2.2.3.1.1.1. vehicleArrival</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">ent = ENT::useInstance();
+
+generate ENT1:Vehicle_Arrives to ent;
+
+LOG::LogInfo( message: "Event generated to indicate a vehicle has arrived at entry.");
+
+</pre></div><div class="section" title="1.1.2.2.2.3.1.1.2. availableSpace"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422376160"></a>1.1.2.2.2.3.1.1.2. availableSpace</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">// Calculate whether there is available space for a vehicle to enter the car park.
+
+opmets = OPMET::useInstance();
+
+spaces = opmets.Capacity - opmets.Occupancy;
+
+if spaces &gt; 0
+	return true;
+else
+	return false;
+end if;
+</pre></div><div class="section" title="1.1.2.2.2.3.1.1.3. createTicket"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422372912"></a>1.1.2.2.2.3.1.1.3. createTicket</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">// Create a new ticket once vehicle is able to enter car park.
+
+LOG::LogInfo( message: "About to create a ticket.");
+
+create object instance ticket of TKT;
+
+opmets = OPMET::useInstance();
+// New ticket number.
+ticket.TKT_Number = opmets.Latest_Ticket_Number + 1;
+// Store new ticket number as latest.
+opmets.Latest_Ticket_Number = ticket.TKT_Number;
+
+LOG::LogInfo( message: "New ticket created with Number: ");
+LOG::LogInteger( message: ticket.TKT_Number);
+
+generate TKT1:Ticket_Created (fromEntry : param.fromEntry, tktNumber : ticket.TKT_Number) to ticket;
+
+
+</pre></div><div class="section" title="1.1.2.2.2.3.1.1.4. checkForSpaceAgain"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422369136"></a>1.1.2.2.2.3.1.1.4. checkForSpaceAgain</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">ent = ENT::useInstance();
+
+generate ENT4:Check_For_Space_Again to ent;
+</pre></div><div class="section" title="1.1.2.2.2.3.1.1.5. waitForSpace"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422366144"></a>1.1.2.2.2.3.1.1.5. waitForSpace</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">ent = ENT::useInstance();
+
+generate ENT3:Wait_For_Space to ent;
+</pre></div><div class="section" title="1.1.2.2.2.3.1.1.6. increaseOccupancy"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422363168"></a>1.1.2.2.2.3.1.1.6. increaseOccupancy</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">LOG::LogInfo( message: "Occuoancy is inreased by 1 when a ticket has been dispencesd.");
+
+opmets = OPMET::useInstance();
+
+New_Occ = opmets.Occupancy + 1;
+opmets.Occupancy = New_Occ;
+</pre></div></div></div></div></div></div><div class="section" title="1.1.2.3. External Entities"><div class="titlepage"><div><div><h5 class="title"><a id="idm305422359392"></a>1.1.2.3. External Entities</h5></div><div><h6 class="subtitle">External Entity</h6></div></div></div><pre class="literallayout"><div class="table"><a id="idm305422357344"></a><p class="title"><b>Table 11. CP_System</b></p><div class="table-contents"><table summary="CP_System" border="1"><colgroup><col /><col /><col /><col /></colgroup><thead><tr><th align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/ExternalEntity.gif" width="100%" /></td></tr></table></div>
+</pre>
+</th><th align="left">
+<pre class="literallayout">Name</pre>
+</th><th align="left">
+<pre class="literallayout">Description</pre>
+</th><th align="left">
+<pre class="literallayout">Bridges</pre>
+</th></tr></thead><tbody><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/ExternalEntity.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">Architecture</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td><td align="left">
+<pre class="literallayout">shutdown</pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/ExternalEntity.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">Logging</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td><td align="left">
+<pre class="literallayout">LogSuccess, LogFailure, LogInfo, LogDate, LogTime, LogReal, LogInteger</pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/ExternalEntity.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">Time</pre>
+</td><td align="left">
+<pre class="literallayout">The Time external entity provides date, timestamp, and timer related operations.</pre>
+</td><td align="left">
+<pre class="literallayout">current_date, create_date, get_second, get_minute, get_hour, get_day, get_month, get_year, current_clock, timer_start, timer_start_recurring, timer_remaining_time, timer_reset_time, timer_add_time, timer_cancel</pre>
+</td></tr><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/ExternalEntity.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">State Save</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td><td align="left">
+<pre class="literallayout">trigger, access</pre>
+</td></tr></tbody></table></div></div><br class="table-break" />
+</pre><div class="section" title="1.1.2.3.1. External Entity Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422312912"></a>1.1.2.3.1. External Entity Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.3.1.1. Architecture Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422311984"></a>1.1.2.3.1.1. Architecture Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.3.1.1.1. shutdown"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422311056"></a>1.1.2.3.1.1.1. shutdown</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout"></pre><pre class="programlisting">control stop;
+</pre></div></div><div class="section" title="1.1.2.3.1.2. Logging Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422308016"></a>1.1.2.3.1.2. Logging Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div></div><div class="section" title="1.1.2.3.1.3. Time Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422306960"></a>1.1.2.3.1.3. Time Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div><div class="section" title="1.1.2.3.1.3.1. timer_start"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422306048"></a>1.1.2.3.1.3.1. timer_start</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout">This bridge operation starts a timer set to expire in the specified number of
+microseconds, generating the passed event upon expiration. Returns the instance
+handle of the timer.</pre><pre class="programlisting">
+</pre></div><div class="section" title="1.1.2.3.1.3.2. timer_start_recurring"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422302832"></a>1.1.2.3.1.3.2. timer_start_recurring</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout">This bridge operation starts a timer set to expire in the specified number of
+microseconds, generating the passed event upon expiration. Upon expiration, the
+timer will be restarted and fire again in the specified number of microseconds
+generating the passed event. This bridge operation returns the instance handle
+of the timer.</pre><pre class="programlisting">
+</pre></div><div class="section" title="1.1.2.3.1.3.3. timer_remaining_time"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422299456"></a>1.1.2.3.1.3.3. timer_remaining_time</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout">Returns the time remaining (in microseconds) for the passed timer instance. If
+the timer has expired, a zero value is returned.</pre><pre class="programlisting">
+</pre></div><div class="section" title="1.1.2.3.1.3.4. timer_reset_time"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422296288"></a>1.1.2.3.1.3.4. timer_reset_time</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout">This bridge operation attempts to set the passed existing timer to expire in
+the specified number of microseconds. If the timer exists (that is, it has not
+expired), a TRUE value is returned. If the timer no longer exists, a FALSE value
+is returned.</pre><pre class="programlisting">
+</pre></div><div class="section" title="1.1.2.3.1.3.5. timer_add_time"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422292992"></a>1.1.2.3.1.3.5. timer_add_time</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout">This bridge operation attempts to add the specified number of microseconds to a
+passed existing timer. If the timer exists (that is, it has not expired), a TRUE
+value is returned. If the timer no longer exists, a FALSE value is returned.</pre><pre class="programlisting">
+</pre></div><div class="section" title="1.1.2.3.1.3.6. timer_cancel"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422289728"></a>1.1.2.3.1.3.6. timer_cancel</h6></div><div><h6 class="subtitle"></h6></div></div></div><pre class="literallayout">This bridge operation cancels and deletes the passed timer instance. If the 
+timer exists (that is, it had not expired), a TRUE value is returned. If the
+timer no longer exists, a FALSE value is returned.</pre><pre class="programlisting">
+</pre></div></div><div class="section" title="1.1.2.3.1.4. State Save Activities"><div class="titlepage"><div><div><h6 class="title"><a id="idm305422286368"></a>1.1.2.3.1.4. State Save Activities</h6></div><div><h6 class="subtitle"></h6></div></div></div></div></div></div></div><div class="section" title="1.1.3. CP_Interfaces"><div class="titlepage"><div><div><h4 class="title"><a id="idm305422284928"></a>1.1.3. CP_Interfaces</h4></div><div><h5 class="subtitle">Package</h5></div></div></div><pre class="literallayout"><div class="figure"><a id="CarParkTry-CP_Interfaces-PackageDiagram-figure"></a><p class="title"><b>Figure 13. CP_Interfaces Package Diagram</b></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/CarParkTry-CP_Interfaces-Package Diagram.png" width="100%" alt="CP_Interfaces Package Diagram" /></td></tr></table></div></div></div><br class="figure-break" />
+</pre><div class="section" title="1.1.3.1. Barrier_Control"><div class="titlepage"><div><div><h5 class="title"><a id="idm305422279328"></a>1.1.3.1. Barrier_Control</h5></div><div><h6 class="subtitle">Interface</h6></div></div></div><pre class="literallayout"></pre><pre class="literallayout"><div class="table"><a id="idm305422276192"></a><p class="title"><b>Table 12. Barrier_Control Messages</b></p><div class="table-contents"><table summary="Barrier_Control Messages" border="1"><colgroup><col /><col /><col /><col /></colgroup><thead><tr><th align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/Message.gif" width="100%" /></td></tr></table></div>
+</pre>
+</th><th align="left">
+<pre class="literallayout">Name</pre>
+</th><th align="left">
+<pre class="literallayout">Direction</pre>
+</th><th align="left">
+<pre class="literallayout">Description</pre>
+</th></tr></thead><tbody><tr><td align="left">
+<pre class="literallayout"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="images/SendSignal.gif" width="100%" /></td></tr></table></div>
+</pre>
+</td><td align="left">
+<pre class="literallayout">ToBarrier</pre>
+</td><td align="left">
+<pre class="literallayout">Client to Server (Requirer to Provider)</pre>
+</td><td align="left">
+<pre class="literallayout"></pre>
+</td></tr></tbody></table></div></div><br class="table-break" />
+</pre></div></div></div></div></div></body></html>

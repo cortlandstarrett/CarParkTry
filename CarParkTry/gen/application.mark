@@ -1,0 +1,3 @@
+*,RootPackage,*,CarParkTry::CP_System
+CP_System::CP_Controller,InitFunction,Component,Welcome
+

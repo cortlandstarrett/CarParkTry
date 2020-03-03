@@ -1,0 +1,233 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("8b049f40-14ce-409e-9256-9f8b72953845",
+	"00000000-0000-0000-0000-000000000000",
+	"cb825a68-8f45-47a2-859f-883306c92aec",
+	'CP_Controller_Tests',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("c4482924-0108-40af-8f9b-4fbd1bc8dceb",
+	112,
+	"8b049f40-14ce-409e-9256-9f8b72953845",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'',
+	'CarParkTry::CP_System::CP_Controller::CP_Controller_Tests');
+INSERT INTO DIM_DIA
+	VALUES ("c4482924-0108-40af-8f9b-4fbd1bc8dceb",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_SYNC
+	VALUES ("93cdb609-768b-45d5-a47d-2c4ac65b775a",
+	"00000000-0000-0000-0000-000000000000",
+	'awaitVehicle',
+	'',
+	'ent = ENT::useInstance();
+
+generate ENT2:Await_Vehicle to ent;
+
+LOG::LogInfo( message: "Making sure Entry executes action for first state.");
+
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("93cdb609-768b-45d5-a47d-2c4ac65b775a",
+	1,
+	"8b049f40-14ce-409e-9256-9f8b72953845",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("3bf6b926-3924-4757-9d31-464372062ef3",
+	"00000000-0000-0000-0000-000000000000",
+	'initEntry',
+	'',
+	'ent = ENT::useInstance();
+
+ent.ENT_Number = 1 ;
+
+LOG::LogInfo( message: "Created instance of CP_Entry and given it a Number of :");
+LOG::LogInteger( message: ent.ENT_Number);',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("3bf6b926-3924-4757-9d31-464372062ef3",
+	1,
+	"8b049f40-14ce-409e-9256-9f8b72953845",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("1340edaa-08fa-4d63-8421-d5420933d455",
+	"00000000-0000-0000-0000-000000000000",
+	'initOperMetrics',
+	'',
+	'// Initialise the car park operational metrics.
+
+opmets = OPMET::useInstance();
+
+opmets.Capacity = 20;
+opmets.Occupancy = 0;
+opmets.Latest_Ticket_Number = 0;
+opmets.Version = 1.0;
+
+LOG::LogInfo( message: "Car park capacity is: " );
+LOG::LogInteger( message: opmets.Capacity);
+
+LOG::LogInfo( message: "CurrentcCar park occupancy is: " );
+LOG::LogInteger( message: opmets.Occupancy);
+
+LOG::LogInfo( message: "Latest Ticket Number is: " );
+LOG::LogInteger( message: opmets.Latest_Ticket_Number);
+
+LOG::LogReal( message: " is Current Version of Metrics.", r: opmets.Version );
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("1340edaa-08fa-4d63-8421-d5420933d455",
+	1,
+	"8b049f40-14ce-409e-9256-9f8b72953845",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("c96371c0-bd63-40bf-ad1c-e43b381c5789",
+	"00000000-0000-0000-0000-000000000000",
+	'Welcome',
+	'',
+	'LOG::LogInfo( message: "Welcome to the Automatically Controlled Carpark." );
+LOG::LogInfo( message: "________________________________________________");
+
+::initOperMetrics();
+::initEntry();
+
+
+::vehicleArrival();
+::acceptTicket();
+::vehicleEntering();
+
+
+::vehicleArrival();
+::acceptTicket();
+::vehicleEntering();
+
+
+::vehicleArrival();
+::acceptTicket();
+::vehicleEntering();
+
+control stop;
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("c96371c0-bd63-40bf-ad1c-e43b381c5789",
+	1,
+	"8b049f40-14ce-409e-9256-9f8b72953845",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("ac00fc61-7f57-44b4-be48-e4c555d1c6c3",
+	"00000000-0000-0000-0000-000000000000",
+	'acceptTicket',
+	'',
+	'ent = ENT::useInstance();
+
+generate ENT7:Ticket_Accepted to ent;
+
+LOG::LogInfo( message: "Ticket has been accepted by driver.");',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("ac00fc61-7f57-44b4-be48-e4c555d1c6c3",
+	1,
+	"8b049f40-14ce-409e-9256-9f8b72953845",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("75c1d78b-c76a-4aa1-ace1-27f10ced8309",
+	"00000000-0000-0000-0000-000000000000",
+	'vehicleEntering',
+	'',
+	'ent = ENT::useInstance();
+
+generate ENT8:Vehicle_Entered to ent;
+
+LOG::LogInfo( message: "Vehicle has entered car park.");',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("75c1d78b-c76a-4aa1-ace1-27f10ced8309",
+	1,
+	"8b049f40-14ce-409e-9256-9f8b72953845",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("9c8b1a54-395f-40ae-b651-6c2283d8e327",
+	"00000000-0000-0000-0000-000000000000",
+	'issueTicket',
+	'',
+	'ent = ENT::useInstance();
+
+generate ENT6:Ticket_Issued to ent;
+
+LOG::LogInfo( message: "Ticket has been accepted by driver.");',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("9c8b1a54-395f-40ae-b651-6c2283d8e327",
+	1,
+	"8b049f40-14ce-409e-9256-9f8b72953845",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO PE_PE
+	VALUES ("8b049f40-14ce-409e-9256-9f8b72953845",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"8b3a0a2e-2871-40dd-965b-7120abfc2c97",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("8b3a0a2e-2871-40dd-965b-7120abfc2c97",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'CP_Controller',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'../CP_Controller.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("cb825a68-8f45-47a2-859f-883306c92aec",
+	'CarParkTry',
+	1,
+	'../../../CarParkTry.xtuml');

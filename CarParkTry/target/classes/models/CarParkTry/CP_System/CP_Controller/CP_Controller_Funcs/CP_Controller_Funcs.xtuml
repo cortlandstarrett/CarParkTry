@@ -1,0 +1,203 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("04ef9c47-6cc2-4a78-8c3b-5a2b8e3b3e40",
+	"00000000-0000-0000-0000-000000000000",
+	"cb825a68-8f45-47a2-859f-883306c92aec",
+	'CP_Controller_Funcs',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("404b9940-016a-4674-91c5-1ba3732b288f",
+	112,
+	"04ef9c47-6cc2-4a78-8c3b-5a2b8e3b3e40",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'4.1.17',
+	'CarParkTry::CP_System::CP_Controller::CP_Controller_Funcs');
+INSERT INTO DIM_DIA
+	VALUES ("404b9940-016a-4674-91c5-1ba3732b288f",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_SYNC
+	VALUES ("7353e30d-8187-4634-8c52-03944ec21b4b",
+	"00000000-0000-0000-0000-000000000000",
+	'vehicleArrival',
+	'',
+	'ent = ENT::useInstance();
+
+generate ENT1:Vehicle_Arrives to ent;
+
+LOG::LogInfo( message: "Event generated to indicate a vehicle has arrived at entry.");
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("7353e30d-8187-4634-8c52-03944ec21b4b",
+	1,
+	"04ef9c47-6cc2-4a78-8c3b-5a2b8e3b3e40",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("74038a39-6777-4e8d-8d5f-cf53239ddd72",
+	"00000000-0000-0000-0000-000000000000",
+	'availableSpace',
+	'',
+	'// Calculate whether there is available space for a vehicle to enter the car park.
+
+opmets = OPMET::useInstance();
+
+spaces = opmets.Capacity - opmets.Occupancy;
+
+if spaces > 0
+	return true;
+else
+	return false;
+end if;',
+	"ba5eda7a-def5-0000-0000-000000000001",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("74038a39-6777-4e8d-8d5f-cf53239ddd72",
+	1,
+	"04ef9c47-6cc2-4a78-8c3b-5a2b8e3b3e40",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("946829ea-317c-455b-b2ee-a190631548a2",
+	"00000000-0000-0000-0000-000000000000",
+	'createTicket',
+	'',
+	'// Create a new ticket once vehicle is able to enter car park.
+
+LOG::LogInfo( message: "About to create a ticket.");
+
+create object instance ticket of TKT;
+
+opmets = OPMET::useInstance();
+// New ticket number.
+ticket.TKT_Number = opmets.Latest_Ticket_Number + 1;
+// Store new ticket number as latest.
+opmets.Latest_Ticket_Number = ticket.TKT_Number;
+
+LOG::LogInfo( message: "New ticket created with Number: ");
+LOG::LogInteger( message: ticket.TKT_Number);
+
+generate TKT1:Ticket_Created (fromEntry : param.fromEntry, tktNumber : ticket.TKT_Number) to ticket;
+
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO S_SPARM
+	VALUES ("274be47c-0724-406b-9297-30306e4a3783",
+	"946829ea-317c-455b-b2ee-a190631548a2",
+	'fromEntry',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO PE_PE
+	VALUES ("946829ea-317c-455b-b2ee-a190631548a2",
+	1,
+	"04ef9c47-6cc2-4a78-8c3b-5a2b8e3b3e40",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("ad1a3662-33ee-444a-bd4d-abfde2ccb3e9",
+	"00000000-0000-0000-0000-000000000000",
+	'checkForSpaceAgain',
+	'',
+	'ent = ENT::useInstance();
+
+generate ENT4:Check_For_Space_Again to ent;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("ad1a3662-33ee-444a-bd4d-abfde2ccb3e9",
+	1,
+	"04ef9c47-6cc2-4a78-8c3b-5a2b8e3b3e40",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("b1709e92-e2d9-4680-9539-c3f95a01bea6",
+	"00000000-0000-0000-0000-000000000000",
+	'waitForSpace',
+	'',
+	'ent = ENT::useInstance();
+
+generate ENT3:Wait_For_Space to ent;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("b1709e92-e2d9-4680-9539-c3f95a01bea6",
+	1,
+	"04ef9c47-6cc2-4a78-8c3b-5a2b8e3b3e40",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("04c386a0-8ede-4938-9315-6fb43872787e",
+	"00000000-0000-0000-0000-000000000000",
+	'increaseOccupancy',
+	'',
+	'LOG::LogInfo( message: "Occuoancy is inreased by 1 when a ticket has been dispencesd.");
+
+opmets = OPMET::useInstance();
+
+New_Occ = opmets.Occupancy + 1;
+opmets.Occupancy = New_Occ;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("04c386a0-8ede-4938-9315-6fb43872787e",
+	1,
+	"04ef9c47-6cc2-4a78-8c3b-5a2b8e3b3e40",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO PE_PE
+	VALUES ("04ef9c47-6cc2-4a78-8c3b-5a2b8e3b3e40",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"8b3a0a2e-2871-40dd-965b-7120abfc2c97",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("8b3a0a2e-2871-40dd-965b-7120abfc2c97",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'CP_Controller',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'../CP_Controller.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("cb825a68-8f45-47a2-859f-883306c92aec",
+	'CarParkTry',
+	1,
+	'../../../CarParkTry.xtuml');

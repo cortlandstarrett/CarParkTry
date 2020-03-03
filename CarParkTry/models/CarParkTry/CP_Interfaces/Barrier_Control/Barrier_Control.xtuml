@@ -1,0 +1,51 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("e041fdf3-59f2-4f7d-a615-bcf8a4cee3a3",
+	"00000000-0000-0000-0000-000000000000",
+	'Barrier_Control',
+	'');
+INSERT INTO C_EP
+	VALUES ("9dadbc39-4fca-4aa8-ae07-d8a5c177ba14",
+	"e041fdf3-59f2-4f7d-a615-bcf8a4cee3a3",
+	-1,
+	'ToBarrier',
+	'');
+INSERT INTO C_AS
+	VALUES ("9dadbc39-4fca-4aa8-ae07-d8a5c177ba14",
+	'ToBarrier',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("b9d56495-4004-4602-87fe-2e7576039624",
+	"9dadbc39-4fca-4aa8-ae07-d8a5c177ba14",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'barNumber',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("4ddb2f6e-0022-4bba-b0c9-b095cb3611ad",
+	"9dadbc39-4fca-4aa8-ae07-d8a5c177ba14",
+	"ba5eda7a-def5-0000-0000-000000000001",
+	'barUP',
+	'',
+	0,
+	'',
+	"b9d56495-4004-4602-87fe-2e7576039624");
+INSERT INTO PE_PE
+	VALUES ("e041fdf3-59f2-4f7d-a615-bcf8a4cee3a3",
+	1,
+	"9da85cf5-cb1e-4711-ab4b-2ce56337a8fd",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("9da85cf5-cb1e-4711-ab4b-2ce56337a8fd",
+	"cb825a68-8f45-47a2-859f-883306c92aec",
+	"cb825a68-8f45-47a2-859f-883306c92aec",
+	'CP_Interfaces',
+	'',
+	0,
+	'../CP_Interfaces.xtuml');

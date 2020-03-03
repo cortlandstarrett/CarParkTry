@@ -1,0 +1,1691 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+Notes -
+  xsltproc docgen.xsl doc.xml > doc.html
+-->
+<!DOCTYPE article PUBLIC '-//OASIS//DTD DocBook XML V4.5//EN'
+  '/Applications/BridgePoint.app/Contents/Eclipse//tools/docgen/docbook/docbook-xml-4.5/docbookx.dtd' [
+]>
+<article>
+<title>
+  BridgePoint xtUML Generated Documentation
+</title>
+<articleinfo>
+  <author>
+    <personname>
+      <firstname></firstname><surname></surname>
+    </personname>
+  </author>
+  <publisher>
+  <publishername>xtuml.org</publishername>
+  </publisher>
+</articleinfo>
+<toc></toc>
+<section>
+<title>CarParkTry</title>
+<subtitle>Generated Documentation</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'>Please find below generated documentation for the system named CarParkTry.</literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<section>
+<title>System-Level Packages</title>
+<subtitle></subtitle>
+<section>
+<title>CP_System_Configs</title>
+<subtitle>Package</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><figure id='CarParkTry-CP_System_Configs-PackageDiagram-figure'>
+<title id='CarParkTry-CP_System_Configs-PackageDiagram-figure-title'>CP_System_Configs Package Diagram</title>
+<mediaobject><imageobject>
+<imagedata fileref='images/CarParkTry-CP_System_Configs-Package Diagram.png' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</figure>
+</literallayout></para>
+</section>
+<section>
+<title>CP_System</title>
+<subtitle>Package</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><figure id='CarParkTry-CP_System-PackageDiagram-figure'>
+<title id='CarParkTry-CP_System-PackageDiagram-figure-title'>CP_System Package Diagram</title>
+<mediaobject><imageobject>
+<imagedata fileref='images/CarParkTry-CP_System-Package Diagram.png' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</figure>
+</literallayout></para>
+<section>
+<title>Barrier</title>
+<subtitle>Component</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><figure id='CarParkTry-CP_System-Barrier-ComponentDiagram-figure'>
+<title id='CarParkTry-CP_System-Barrier-ComponentDiagram-figure-title'>Barrier Component Diagram</title>
+<mediaobject><imageobject>
+<imagedata fileref='images/CarParkTry-CP_System-Barrier-Component Diagram.png' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</figure>
+</literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'><table frame='all'>
+<title>Barrier Ports</title>
+<tgroup cols='5' align='left' colsep='0' rowsep='0'>
+<thead>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Port.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Name</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Interface</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Type</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Multiplicity</literallayout></para>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Provision.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>BAR_Message</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Barrier_Control</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>provision</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>0</literallayout></para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</literallayout></para>
+<section>
+<title>Interface Activities</title>
+<subtitle></subtitle>
+<section>
+<title>Port: BAR_Message, Interface: Barrier_Control</title>
+<subtitle></subtitle>
+<section>
+<title>ToBarrier</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>bar = BAR::useInstance();
+
+if param.barNumber ==  bar.BAR_Number
+
+	if param.barUP == true
+		LOG::LogInfo( message: &quot;Send event to OPEN Barrier.&quot; );
+		generate BAR1:OPEN to bar;
+	else
+		LOG::LogInfo( message: &quot;Send event to CLOSE Barrier.&quot; );
+		generate BAR2:CLOSE to bar;
+	end if;
+else
+	LOG::LogInfo( message: &quot;Trying to access the wrong barrier.&quot; );
+end if;
+</programlisting></para>
+</section>
+</section>
+</section>
+<section>
+<title>Barrier Packages</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'>Rendered here are the contained package diagrams.</literallayout></para>
+<section>
+<title>Barriers</title>
+<subtitle>Package</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><figure id='CarParkTry-CP_System-Barrier-Barriers-PackageDiagram-figure'>
+<title id='CarParkTry-CP_System-Barrier-Barriers-PackageDiagram-figure-title'>Barriers Package Diagram</title>
+<mediaobject><imageobject>
+<imagedata fileref='images/CarParkTry-CP_System-Barrier-Barriers-Package Diagram.png' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</figure>
+</literallayout></para>
+<section>
+<title>Datatypes</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><table frame='all'>
+<title>Datatypes</title>
+<tgroup cols='3' align='left' colsep='0' rowsep='0'>
+<thead>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/DataType.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Name</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Description</literallayout></para>
+</entry>
+</row>
+</thead>
+<tbody>
+</tbody>
+</tgroup>
+</table>
+</literallayout></para>
+</section>
+<section>
+<title>Classes</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><table frame='all'>
+<title>Classes</title>
+<tgroup cols='3' align='left' colsep='0' rowsep='0'>
+<thead>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Class.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Name</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Description</literallayout></para>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Class.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>CPBarrier</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Attribute.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>current_state:state&lt;State_Model&gt;</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Attribute.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>BAR_Number:integer</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'><figure id='CarParkTry-CP_System-Barrier-Barriers-CPBarrier-InstanceStateMachine-figure'>
+<title id='CarParkTry-CP_System-Barrier-Barriers-CPBarrier-InstanceStateMachine-figure-title'>Barriers CPBarrier Instance State Machine</title>
+<mediaobject><imageobject>
+<imagedata fileref='images/CarParkTry-CP_System-Barrier-Barriers-CPBarrier-Instance State Machine.png' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</figure>
+</literallayout></para>
+<section>
+<title>Class Activities</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'>Here are listings of all of the activies in the class and its state machine(s).</literallayout></para>
+<section>
+<title>Instance State Machine Actions</title>
+<subtitle></subtitle>
+<section>
+<title>CPBarrier State[1]:Open Position</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>LOG::LogInfo( message: &quot;Barrier is now OPEN.&quot;);
+</programlisting></para>
+</section>
+<section>
+<title>CPBarrier State[2]:Closed Position</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>LOG::LogInfo( message: &quot;Barrier is now CLOSED.&quot;);
+</programlisting></para>
+</section>
+</section>
+<section>
+<title>Class Operations</title>
+<subtitle></subtitle>
+<section>
+<title>Barriers:CPBarrier:  useInstance</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>select any barrier from instances of BAR;
+
+if empty barrier
+	create object instance barrier of BAR;
+end if;
+return barrier;
+</programlisting></para>
+</section>
+</section>
+</section>
+</section>
+</section>
+<section>
+<title>Barrier_Funcs</title>
+<subtitle>Package</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><figure id='CarParkTry-CP_System-Barrier-Barrier_Funcs-PackageDiagram-figure'>
+<title id='CarParkTry-CP_System-Barrier-Barrier_Funcs-PackageDiagram-figure-title'>Barrier_Funcs Package Diagram</title>
+<mediaobject><imageobject>
+<imagedata fileref='images/CarParkTry-CP_System-Barrier-Barrier_Funcs-Package Diagram.png' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</figure>
+</literallayout></para>
+<section>
+<title>Functions</title>
+<subtitle>Functions</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><table frame='all'>
+<title>Barrier_Funcs</title>
+<tgroup cols='3' align='left' colsep='0' rowsep='0'>
+<thead>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Name</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Description</literallayout></para>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>initBarrier()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>openBarrier()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</literallayout></para>
+<section>
+<title>Function Activities</title>
+<subtitle></subtitle>
+<section>
+<title>initBarrier</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>bar = BAR::useInstance();
+
+bar.BAR_Number = 1;
+
+LOG::LogInfo( message: &quot;Created instance of Barrier in Barrier component!&quot; );
+</programlisting></para>
+</section>
+<section>
+<title>openBarrier</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>LOG::LogInfo( message: &quot;Opening barrier for vehicle to entyer cat park.&quot;);
+
+bar = BAR::useInstance();
+
+generate BAR1:OPEN to bar;
+</programlisting></para>
+</section>
+</section>
+</section>
+</section>
+</section>
+</section>
+<section>
+<title>CP_Controller</title>
+<subtitle>Component</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><figure id='CarParkTry-CP_System-CP_Controller-ComponentDiagram-figure'>
+<title id='CarParkTry-CP_System-CP_Controller-ComponentDiagram-figure-title'>CP_Controller Component Diagram</title>
+<mediaobject><imageobject>
+<imagedata fileref='images/CarParkTry-CP_System-CP_Controller-Component Diagram.png' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</figure>
+</literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'><table frame='all'>
+<title>CP_Controller Ports</title>
+<tgroup cols='5' align='left' colsep='0' rowsep='0'>
+<thead>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Port.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Name</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Interface</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Type</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Multiplicity</literallayout></para>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Requirement.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>BAR_Message</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Barrier_Control</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>requirement</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>0</literallayout></para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</literallayout></para>
+<section>
+<title>Interface Activities</title>
+<subtitle></subtitle>
+<section>
+<title>Port: BAR_Message, Interface: Barrier_Control</title>
+<subtitle></subtitle>
+<section>
+<title>ToBarrier</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>
+</programlisting></para>
+</section>
+</section>
+</section>
+<section>
+<title>CP_Controller Packages</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'>Rendered here are the contained package diagrams.</literallayout></para>
+<section>
+<title>CP_Control_Elements</title>
+<subtitle>Package</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><figure id='CarParkTry-CP_System-CP_Controller-CP_Control_Elements-PackageDiagram-figure'>
+<title id='CarParkTry-CP_System-CP_Controller-CP_Control_Elements-PackageDiagram-figure-title'>CP_Control_Elements Package Diagram</title>
+<mediaobject><imageobject>
+<imagedata fileref='images/CarParkTry-CP_System-CP_Controller-CP_Control_Elements-Package Diagram.png' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</figure>
+</literallayout></para>
+<section>
+<title>Datatypes</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><table frame='all'>
+<title>Datatypes</title>
+<tgroup cols='3' align='left' colsep='0' rowsep='0'>
+<thead>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/DataType.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Name</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Description</literallayout></para>
+</entry>
+</row>
+</thead>
+<tbody>
+</tbody>
+</tgroup>
+</table>
+</literallayout></para>
+</section>
+<section>
+<title>Classes</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><table frame='all'>
+<title>Classes</title>
+<tgroup cols='3' align='left' colsep='0' rowsep='0'>
+<thead>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Class.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Name</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Description</literallayout></para>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Class.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>CP_Entry</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Attribute.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>current_state:state&lt;State_Model&gt;</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Attribute.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>ENT_Number:integer</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Class.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Operational_Metrics</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Attribute.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Latest_Ticket_Number:integer</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Attribute.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Version:real</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Attribute.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Occupancy:integer</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Attribute.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Capacity:integer</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Class.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Ticket</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Attribute.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>When_Collected:timestamp</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Attribute.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>When_Paid:timestamp</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Attribute.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>When_Created:timestamp</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Attribute.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>current_state:state&lt;State_Model&gt;</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Attribute.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>TKT_Number:integer</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'><figure id='CarParkTry-CP_System-CP_Controller-CP_Control_Elements-CP_Entry-InstanceStateMachine-figure'>
+<title id='CarParkTry-CP_System-CP_Controller-CP_Control_Elements-CP_Entry-InstanceStateMachine-figure-title'>CP_Control_Elements CP_Entry Instance State Machine</title>
+<mediaobject><imageobject>
+<imagedata fileref='images/CarParkTry-CP_System-CP_Controller-CP_Control_Elements-CP_Entry-Instance State Machine.png' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</figure>
+</literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'><figure id='CarParkTry-CP_System-CP_Controller-CP_Control_Elements-Ticket-InstanceStateMachine-figure'>
+<title id='CarParkTry-CP_System-CP_Controller-CP_Control_Elements-Ticket-InstanceStateMachine-figure-title'>CP_Control_Elements Ticket Instance State Machine</title>
+<mediaobject><imageobject>
+<imagedata fileref='images/CarParkTry-CP_System-CP_Controller-CP_Control_Elements-Ticket-Instance State Machine.png' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</figure>
+</literallayout></para>
+<section>
+<title>Class Activities</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'>Here are listings of all of the activies in the class and its state machine(s).</literallayout></para>
+<section>
+<title>Instance State Machine Actions</title>
+<subtitle></subtitle>
+<section>
+<title>CP_Entry State[1]:Awaiting Vehicle</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>LOG::LogInfo( message: &quot;Waiting for a vehicle to arrive.&quot;);
+
+// ::closeBarrier;
+//send BAR_Message::ToBarrier(barNumber : self.ENT_Number, barPosition: BarPosition::CLOSE);
+BAR_Message::ToBarrier(barNumber : self.ENT_Number, barUP: false);
+
+LOG::LogInfo( message: &quot;Close event sent to barrier from Entry.&quot;);
+</programlisting></para>
+</section>
+<section>
+<title>CP_Entry State[2]:Checking Carpark Not Full</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>LOG::LogInfo( message: &quot;Checking that there is one or more spaces available in car park.&quot;);
+
+if ::availableSpace()
+	::createTicket(fromEntry : self.ENT_Number);
+	LOG::LogInfo( message: &quot;Ticket has been requested.&quot;);
+	generate ENT5:Ticket_Requested to self;
+	
+else
+	LOG::LogInfo( message: &quot;Need to wait for space.&quot;);
+	generate ENT3:Wait_For_Space to self;
+	
+end if;
+
+</programlisting></para>
+</section>
+<section>
+<title>CP_Entry State[3]:Waitung For Space</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>LOG::LogInfo( message: &quot;Waiting 10 seconds before checkng space again.&quot;);
+
+create event instance wait of ENT4:Check_For_Space_Again to self;
+timeout = TIM::timer_start( event_inst: wait, microseconds: 10000000);
+</programlisting></para>
+</section>
+<section>
+<title>CP_Entry State[4]:Awaiting Ticket Issue</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>LOG::LogInfo( message: &quot;Waiting for Ticket to be dispensed.&quot;);
+</programlisting></para>
+</section>
+<section>
+<title>CP_Entry State[5]:Awaiting Vehicle Entry</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>LOG::LogInfo( message: &quot;Ticket needs to be taken from dispenser before a vehicle can enter the car park.&quot;);
+LOG::LogInfo( message: &quot;Once accepted, the barrier will open to allow entry.&quot;);
+
+//::openBarrier();
+//send BAR_Message::ToBarrier(barNumber : self.ENT_Number, barPosition: BarPosition::CLOSE);
+BAR_Message::ToBarrier(barNumber : self.ENT_Number, barUP: false);
+
+LOG::LogInfo( message: &quot;Give vehicle 10 seconds before placing in a delayed state.&quot;);
+
+create event instance delay of ENT9:Entry_Timeout to self;
+timeout = TIM::timer_start( event_inst: delay, microseconds: 10000000);
+</programlisting></para>
+</section>
+<section>
+<title>CP_Entry State[6]:Awaiting Ticket Acceptance</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>LOG::LogInfo( message: &quot;When ticket is issued the occupancy need to be updated.&quot; );
+
+::increaseOccupancy();
+</programlisting></para>
+</section>
+<section>
+<title>CP_Entry State[7]:Delayed Entry</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>LOG::LogInfo( message: &quot;Entry of vehicle has been dlayed for some unknown reason.&quot;);
+</programlisting></para>
+</section>
+</section>
+<section>
+<title>Class Operations</title>
+<subtitle></subtitle>
+<section>
+<title>CP_Control_Elements:CP_Entry:  useInstance</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>select any entry from instances of ENT;
+
+if empty entry
+	create object instance entry of ENT;
+end if;
+return entry;
+</programlisting></para>
+</section>
+</section>
+</section>
+<section>
+<title>Class Activities</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'>Here are listings of all of the activies in the class and its state machine(s).</literallayout></para>
+<section>
+<title>Class Operations</title>
+<subtitle></subtitle>
+<section>
+<title>CP_Control_Elements:Operational_Metrics:  useInstance</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>select any opmets from instances of OPMET;
+if empty opmets
+	create object instance opmets of OPMET;
+end if;
+return opmets;
+</programlisting></para>
+</section>
+</section>
+</section>
+<section>
+<title>Class Activities</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'>Here are listings of all of the activies in the class and its state machine(s).</literallayout></para>
+<section>
+<title>Instance State Machine Actions</title>
+<subtitle></subtitle>
+<section>
+<title>Ticket State[1]:Ticket Created</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>// This instance state should now exist because a new (associated) instance of a ticket has been created.
+
+LOG::LogInfo( message: &quot;New Ticket Instance now exists.&quot;);
+</programlisting></para>
+</section>
+<section>
+<title>Ticket State[2]:Associating Entry</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>// Relate the newly created ticket to the entry it is to be issued from, and set the time of its creation.
+
+ent = ENT::useInstance();
+
+if (ent.ENT_Number == rcvd_evt.fromEntry)
+	
+	select any ticket from instances of TKT where selected.TKT_Number == rcvd_evt.tktNumber;
+
+	relate ticket to ent across R1;
+	
+	//current_time = TIM::current_clock();
+	
+	ticket.When_Created = TIM::current_clock();
+	
+	LOG::LogTime( message: &quot; is time of creation for ticket number: &quot;, t: ticket.When_Created);
+	LOG::LogInfo( message: &quot;Associating ticket number: &quot;);
+	LOG::LogInteger( message: ticket.TKT_Number);
+	
+	generate ENT6:Ticket_Issued to ent;
+
+else
+	
+	LOG::LogInfo( message: &quot;There&apos;&apos;s been a mix up with entries and tickets!&quot;);
+	
+end if;
+</programlisting></para>
+</section>
+</section>
+</section>
+</section>
+<section>
+<title>Associations</title>
+<subtitle>Associations</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><table frame='all'>
+<title>CP_Control_Elements</title>
+<tgroup cols='3' align='left' colsep='0' rowsep='0'>
+<thead>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Association.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Name</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Description</literallayout></para>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Association.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>1</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</literallayout></para>
+</section>
+</section>
+<section>
+<title>CP_Controller_Tests</title>
+<subtitle>Package</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><figure id='CarParkTry-CP_System-CP_Controller-CP_Controller_Tests-PackageDiagram-figure'>
+<title id='CarParkTry-CP_System-CP_Controller-CP_Controller_Tests-PackageDiagram-figure-title'>CP_Controller_Tests Package Diagram</title>
+<mediaobject><imageobject>
+<imagedata fileref='images/CarParkTry-CP_System-CP_Controller-CP_Controller_Tests-Package Diagram.png' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</figure>
+</literallayout></para>
+<section>
+<title>Functions</title>
+<subtitle>Functions</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><table frame='all'>
+<title>CP_Controller_Tests</title>
+<tgroup cols='3' align='left' colsep='0' rowsep='0'>
+<thead>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Name</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Description</literallayout></para>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>awaitVehicle()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>initEntry()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>initOperMetrics()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Welcome()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>acceptTicket()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>vehicleEntering()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>issueTicket()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</literallayout></para>
+<section>
+<title>Function Activities</title>
+<subtitle></subtitle>
+<section>
+<title>awaitVehicle</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>ent = ENT::useInstance();
+
+generate ENT2:Await_Vehicle to ent;
+
+LOG::LogInfo( message: &quot;Making sure Entry executes action for first state.&quot;);
+
+
+</programlisting></para>
+</section>
+<section>
+<title>initEntry</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>ent = ENT::useInstance();
+
+ent.ENT_Number = 1 ;
+
+LOG::LogInfo( message: &quot;Created instance of CP_Entry and given it a Number of :&quot;);
+LOG::LogInteger( message: ent.ENT_Number);
+</programlisting></para>
+</section>
+<section>
+<title>initOperMetrics</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>// Initialise the car park operational metrics.
+
+opmets = OPMET::useInstance();
+
+opmets.Capacity = 20;
+opmets.Occupancy = 0;
+opmets.Latest_Ticket_Number = 0;
+opmets.Version = 1.0;
+
+LOG::LogInfo( message: &quot;Car park capacity is: &quot; );
+LOG::LogInteger( message: opmets.Capacity);
+
+LOG::LogInfo( message: &quot;CurrentcCar park occupancy is: &quot; );
+LOG::LogInteger( message: opmets.Occupancy);
+
+LOG::LogInfo( message: &quot;Latest Ticket Number is: &quot; );
+LOG::LogInteger( message: opmets.Latest_Ticket_Number);
+
+LOG::LogReal( message: &quot; is Current Version of Metrics.&quot;, r: opmets.Version );
+
+</programlisting></para>
+</section>
+<section>
+<title>Welcome</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>LOG::LogInfo( message: &quot;Welcome to the Automatically Controlled Carpark.&quot; );
+LOG::LogInfo( message: &quot;________________________________________________&quot;);
+
+::initOperMetrics();
+::initEntry();
+
+
+::vehicleArrival();
+::acceptTicket();
+::vehicleEntering();
+
+
+::vehicleArrival();
+::acceptTicket();
+::vehicleEntering();
+
+
+::vehicleArrival();
+::acceptTicket();
+::vehicleEntering();
+
+control stop;
+
+</programlisting></para>
+</section>
+<section>
+<title>acceptTicket</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>ent = ENT::useInstance();
+
+generate ENT7:Ticket_Accepted to ent;
+
+LOG::LogInfo( message: &quot;Ticket has been accepted by driver.&quot;);
+</programlisting></para>
+</section>
+<section>
+<title>vehicleEntering</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>ent = ENT::useInstance();
+
+generate ENT8:Vehicle_Entered to ent;
+
+LOG::LogInfo( message: &quot;Vehicle has entered car park.&quot;);
+</programlisting></para>
+</section>
+<section>
+<title>issueTicket</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>ent = ENT::useInstance();
+
+generate ENT6:Ticket_Issued to ent;
+
+LOG::LogInfo( message: &quot;Ticket has been accepted by driver.&quot;);
+</programlisting></para>
+</section>
+</section>
+</section>
+</section>
+<section>
+<title>CP_Controller_Funcs</title>
+<subtitle>Package</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><figure id='CarParkTry-CP_System-CP_Controller-CP_Controller_Funcs-PackageDiagram-figure'>
+<title id='CarParkTry-CP_System-CP_Controller-CP_Controller_Funcs-PackageDiagram-figure-title'>CP_Controller_Funcs Package Diagram</title>
+<mediaobject><imageobject>
+<imagedata fileref='images/CarParkTry-CP_System-CP_Controller-CP_Controller_Funcs-Package Diagram.png' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</figure>
+</literallayout></para>
+<section>
+<title>Functions</title>
+<subtitle>Functions</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><table frame='all'>
+<title>CP_Controller_Funcs</title>
+<tgroup cols='3' align='left' colsep='0' rowsep='0'>
+<thead>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Name</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Description</literallayout></para>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>vehicleArrival()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>availableSpace()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>createTicket(fromEntry)</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>checkForSpaceAgain()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>waitForSpace()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Function.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>increaseOccupancy()</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</literallayout></para>
+<section>
+<title>Function Activities</title>
+<subtitle></subtitle>
+<section>
+<title>vehicleArrival</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>ent = ENT::useInstance();
+
+generate ENT1:Vehicle_Arrives to ent;
+
+LOG::LogInfo( message: &quot;Event generated to indicate a vehicle has arrived at entry.&quot;);
+
+</programlisting></para>
+</section>
+<section>
+<title>availableSpace</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>// Calculate whether there is available space for a vehicle to enter the car park.
+
+opmets = OPMET::useInstance();
+
+spaces = opmets.Capacity - opmets.Occupancy;
+
+if spaces &gt; 0
+	return true;
+else
+	return false;
+end if;
+</programlisting></para>
+</section>
+<section>
+<title>createTicket</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>// Create a new ticket once vehicle is able to enter car park.
+
+LOG::LogInfo( message: &quot;About to create a ticket.&quot;);
+
+create object instance ticket of TKT;
+
+opmets = OPMET::useInstance();
+// New ticket number.
+ticket.TKT_Number = opmets.Latest_Ticket_Number + 1;
+// Store new ticket number as latest.
+opmets.Latest_Ticket_Number = ticket.TKT_Number;
+
+LOG::LogInfo( message: &quot;New ticket created with Number: &quot;);
+LOG::LogInteger( message: ticket.TKT_Number);
+
+generate TKT1:Ticket_Created (fromEntry : param.fromEntry, tktNumber : ticket.TKT_Number) to ticket;
+
+
+</programlisting></para>
+</section>
+<section>
+<title>checkForSpaceAgain</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>ent = ENT::useInstance();
+
+generate ENT4:Check_For_Space_Again to ent;
+</programlisting></para>
+</section>
+<section>
+<title>waitForSpace</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>ent = ENT::useInstance();
+
+generate ENT3:Wait_For_Space to ent;
+</programlisting></para>
+</section>
+<section>
+<title>increaseOccupancy</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>LOG::LogInfo( message: &quot;Occuoancy is inreased by 1 when a ticket has been dispencesd.&quot;);
+
+opmets = OPMET::useInstance();
+
+New_Occ = opmets.Occupancy + 1;
+opmets.Occupancy = New_Occ;
+</programlisting></para>
+</section>
+</section>
+</section>
+</section>
+</section>
+</section>
+<section>
+<title>External Entities</title>
+<subtitle>External Entity</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><table frame='all'>
+<title>CP_System</title>
+<tgroup cols='4' align='left' colsep='0' rowsep='0'>
+<thead>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/ExternalEntity.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Name</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Description</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Bridges</literallayout></para>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/ExternalEntity.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Architecture</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>shutdown</literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/ExternalEntity.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Logging</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>LogSuccess, LogFailure, LogInfo, LogDate, LogTime, LogReal, LogInteger</literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/ExternalEntity.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Time</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>The Time external entity provides date, timestamp, and timer related operations.</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>current_date, create_date, get_second, get_minute, get_hour, get_day, get_month, get_year, current_clock, timer_start, timer_start_recurring, timer_remaining_time, timer_reset_time, timer_add_time, timer_cancel</literallayout></para>
+</entry>
+</row>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/ExternalEntity.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>State Save</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>trigger, access</literallayout></para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</literallayout></para>
+<section>
+<title>External Entity Activities</title>
+<subtitle></subtitle>
+<section>
+<title>Architecture Activities</title>
+<subtitle></subtitle>
+<section>
+<title>shutdown</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><programlisting>control stop;
+</programlisting></para>
+</section>
+</section>
+<section>
+<title>Logging Activities</title>
+<subtitle></subtitle>
+</section>
+<section>
+<title>Time Activities</title>
+<subtitle></subtitle>
+<section>
+<title>timer_start</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'>This bridge operation starts a timer set to expire in the specified number of
+microseconds, generating the passed event upon expiration. Returns the instance
+handle of the timer.</literallayout></para>
+<para><programlisting>
+</programlisting></para>
+</section>
+<section>
+<title>timer_start_recurring</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'>This bridge operation starts a timer set to expire in the specified number of
+microseconds, generating the passed event upon expiration. Upon expiration, the
+timer will be restarted and fire again in the specified number of microseconds
+generating the passed event. This bridge operation returns the instance handle
+of the timer.</literallayout></para>
+<para><programlisting>
+</programlisting></para>
+</section>
+<section>
+<title>timer_remaining_time</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'>Returns the time remaining (in microseconds) for the passed timer instance. If
+the timer has expired, a zero value is returned.</literallayout></para>
+<para><programlisting>
+</programlisting></para>
+</section>
+<section>
+<title>timer_reset_time</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'>This bridge operation attempts to set the passed existing timer to expire in
+the specified number of microseconds. If the timer exists (that is, it has not
+expired), a TRUE value is returned. If the timer no longer exists, a FALSE value
+is returned.</literallayout></para>
+<para><programlisting>
+</programlisting></para>
+</section>
+<section>
+<title>timer_add_time</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'>This bridge operation attempts to add the specified number of microseconds to a
+passed existing timer. If the timer exists (that is, it has not expired), a TRUE
+value is returned. If the timer no longer exists, a FALSE value is returned.</literallayout></para>
+<para><programlisting>
+</programlisting></para>
+</section>
+<section>
+<title>timer_cancel</title>
+<subtitle></subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'>This bridge operation cancels and deletes the passed timer instance. If the 
+timer exists (that is, it had not expired), a TRUE value is returned. If the
+timer no longer exists, a FALSE value is returned.</literallayout></para>
+<para><programlisting>
+</programlisting></para>
+</section>
+</section>
+<section>
+<title>State Save Activities</title>
+<subtitle></subtitle>
+</section>
+</section>
+</section>
+</section>
+<section>
+<title>CP_Interfaces</title>
+<subtitle>Package</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'><figure id='CarParkTry-CP_Interfaces-PackageDiagram-figure'>
+<title id='CarParkTry-CP_Interfaces-PackageDiagram-figure-title'>CP_Interfaces Package Diagram</title>
+<mediaobject><imageobject>
+<imagedata fileref='images/CarParkTry-CP_Interfaces-Package Diagram.png' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</figure>
+</literallayout></para>
+<section>
+<title>Barrier_Control</title>
+<subtitle>Interface</subtitle>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+<para><literallayout xml:space='preserve' class='monospaced'><table frame='all'>
+<title>Barrier_Control Messages</title>
+<tgroup cols='4' align='left' colsep='0' rowsep='0'>
+<thead>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/Message.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Name</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Direction</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Description</literallayout></para>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'><mediaobject><imageobject>
+<imagedata fileref='images/SendSignal.gif' scalefit='1' width='100%'/>
+</imageobject></mediaobject>
+</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>ToBarrier</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'>Client to Server (Requirer to Provider)</literallayout></para>
+</entry>
+<entry>
+<para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</literallayout></para>
+</section>
+</section>
+</section>
+</section>
+</article>

@@ -1,0 +1,97 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("806463ac-1d4b-4591-8fda-13f4a7fa14c3",
+	'CPBarrier',
+	1,
+	'BAR',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("bb495db4-780d-40a5-b011-d5069bde67f4",
+	"806463ac-1d4b-4591-8fda-13f4a7fa14c3",
+	'useInstance',
+	'',
+	"7871a7ac-029e-4455-a982-70afd9e8e136",
+	0,
+	'select any barrier from instances of BAR;
+
+if empty barrier
+	create object instance barrier of BAR;
+end if;
+return barrier;',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0);
+INSERT INTO S_DT_PROXY
+	VALUES ("7871a7ac-029e-4455-a982-70afd9e8e136",
+	"00000000-0000-0000-0000-000000000000",
+	'inst_ref<CPBarrier>',
+	'',
+	'',
+	'../Barriers.xtuml');
+INSERT INTO O_NBATTR
+	VALUES ("feee99d7-746a-4732-b230-70b5b9c9c66f",
+	"806463ac-1d4b-4591-8fda-13f4a7fa14c3");
+INSERT INTO O_BATTR
+	VALUES ("feee99d7-746a-4732-b230-70b5b9c9c66f",
+	"806463ac-1d4b-4591-8fda-13f4a7fa14c3");
+INSERT INTO O_ATTR
+	VALUES ("feee99d7-746a-4732-b230-70b5b9c9c66f",
+	"806463ac-1d4b-4591-8fda-13f4a7fa14c3",
+	"00000000-0000-0000-0000-000000000000",
+	'BAR_Number',
+	'',
+	'',
+	'BAR_Number',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("d2156939-5c77-4c13-8f1b-663498898412",
+	"806463ac-1d4b-4591-8fda-13f4a7fa14c3");
+INSERT INTO O_BATTR
+	VALUES ("d2156939-5c77-4c13-8f1b-663498898412",
+	"806463ac-1d4b-4591-8fda-13f4a7fa14c3");
+INSERT INTO O_ATTR
+	VALUES ("d2156939-5c77-4c13-8f1b-663498898412",
+	"806463ac-1d4b-4591-8fda-13f4a7fa14c3",
+	"feee99d7-746a-4732-b230-70b5b9c9c66f",
+	'current_state',
+	'',
+	'',
+	'current_state',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000006",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"806463ac-1d4b-4591-8fda-13f4a7fa14c3");
+INSERT INTO O_OIDA
+	VALUES ("feee99d7-746a-4732-b230-70b5b9c9c66f",
+	"806463ac-1d4b-4591-8fda-13f4a7fa14c3",
+	0,
+	'BAR_Number');
+INSERT INTO O_ID
+	VALUES (1,
+	"806463ac-1d4b-4591-8fda-13f4a7fa14c3");
+INSERT INTO O_ID
+	VALUES (2,
+	"806463ac-1d4b-4591-8fda-13f4a7fa14c3");
+INSERT INTO PE_PE
+	VALUES ("806463ac-1d4b-4591-8fda-13f4a7fa14c3",
+	1,
+	"cf48a465-72c3-4df8-be6b-244cae1f2ce3",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("cf48a465-72c3-4df8-be6b-244cae1f2ce3",
+	"00000000-0000-0000-0000-000000000000",
+	"cb825a68-8f45-47a2-859f-883306c92aec",
+	'Barriers',
+	'',
+	0,
+	'../Barriers.xtuml');

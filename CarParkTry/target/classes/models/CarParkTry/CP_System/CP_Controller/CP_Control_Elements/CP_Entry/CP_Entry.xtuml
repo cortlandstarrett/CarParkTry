@@ -1,0 +1,97 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("e1b9c606-a821-43a4-8966-ad01eae9854e",
+	'CP_Entry',
+	1,
+	'ENT',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("9e06d0b3-5a77-4dc4-b9ad-5b2ad7879a9f",
+	"e1b9c606-a821-43a4-8966-ad01eae9854e",
+	'useInstance',
+	'',
+	"4e5f7322-f439-4a19-a593-bca76453a680",
+	0,
+	'select any entry from instances of ENT;
+
+if empty entry
+	create object instance entry of ENT;
+end if;
+return entry;',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0);
+INSERT INTO S_DT_PROXY
+	VALUES ("4e5f7322-f439-4a19-a593-bca76453a680",
+	"00000000-0000-0000-0000-000000000000",
+	'inst_ref<CP_Entry>',
+	'',
+	'',
+	'../CP_Control_Elements.xtuml');
+INSERT INTO O_NBATTR
+	VALUES ("a72f6849-26be-44b5-829a-b28d11168622",
+	"e1b9c606-a821-43a4-8966-ad01eae9854e");
+INSERT INTO O_BATTR
+	VALUES ("a72f6849-26be-44b5-829a-b28d11168622",
+	"e1b9c606-a821-43a4-8966-ad01eae9854e");
+INSERT INTO O_ATTR
+	VALUES ("a72f6849-26be-44b5-829a-b28d11168622",
+	"e1b9c606-a821-43a4-8966-ad01eae9854e",
+	"00000000-0000-0000-0000-000000000000",
+	'ENT_Number',
+	'',
+	'',
+	'ENT_Number',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("e032b587-a188-4aa2-a906-c62c9203b293",
+	"e1b9c606-a821-43a4-8966-ad01eae9854e");
+INSERT INTO O_BATTR
+	VALUES ("e032b587-a188-4aa2-a906-c62c9203b293",
+	"e1b9c606-a821-43a4-8966-ad01eae9854e");
+INSERT INTO O_ATTR
+	VALUES ("e032b587-a188-4aa2-a906-c62c9203b293",
+	"e1b9c606-a821-43a4-8966-ad01eae9854e",
+	"a72f6849-26be-44b5-829a-b28d11168622",
+	'current_state',
+	'',
+	'',
+	'current_state',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000006",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"e1b9c606-a821-43a4-8966-ad01eae9854e");
+INSERT INTO O_OIDA
+	VALUES ("a72f6849-26be-44b5-829a-b28d11168622",
+	"e1b9c606-a821-43a4-8966-ad01eae9854e",
+	0,
+	'ENT_Number');
+INSERT INTO O_ID
+	VALUES (1,
+	"e1b9c606-a821-43a4-8966-ad01eae9854e");
+INSERT INTO O_ID
+	VALUES (2,
+	"e1b9c606-a821-43a4-8966-ad01eae9854e");
+INSERT INTO PE_PE
+	VALUES ("e1b9c606-a821-43a4-8966-ad01eae9854e",
+	1,
+	"ae209de6-3d94-4071-8e5d-52171caba846",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("ae209de6-3d94-4071-8e5d-52171caba846",
+	"00000000-0000-0000-0000-000000000000",
+	"cb825a68-8f45-47a2-859f-883306c92aec",
+	'CP_Control_Elements',
+	'',
+	0,
+	'../CP_Control_Elements.xtuml');
