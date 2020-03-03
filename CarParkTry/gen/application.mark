@@ -1,3 +1,3 @@
-*,RootPackage,*,CarParkTry::CP_System
+*,RootPackage,*,CarParkTry::CP_System_Configs
 CP_System::CP_Controller,InitFunction,Component,Welcome
 

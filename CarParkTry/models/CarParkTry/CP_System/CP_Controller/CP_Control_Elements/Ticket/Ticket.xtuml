@@ -34,7 +34,7 @@ INSERT INTO O_BATTR
 INSERT INTO O_ATTR
 	VALUES ("49d828cd-9c92-4cd7-90dd-7c4976cb0467",
 	"2837bab5-1d06-4541-b05a-1f67cc712852",
-	"70e550b7-c3cc-4790-9f32-a273a6e33878",
+	"c63dffe9-e4f6-4e9c-9207-1e3478d4ce8f",
 	'current_state',
 	'',
 	'',
@@ -52,7 +52,7 @@ INSERT INTO O_BATTR
 INSERT INTO O_ATTR
 	VALUES ("ab084b97-44ab-4a82-a8c4-bf3bdfb70c3c",
 	"2837bab5-1d06-4541-b05a-1f67cc712852",
-	"49d828cd-9c92-4cd7-90dd-7c4976cb0467",
+	"70e550b7-c3cc-4790-9f32-a273a6e33878",
 	'When_Created',
 	'',
 	'',
